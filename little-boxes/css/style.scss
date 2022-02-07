@@ -1,0 +1,181 @@
+/*Sets the background color to a light blue and it will get rid of predetermined margin and padding of the browser*/
+body {
+	background: #93d3d0;
+	margin: 0;
+	padding: 0;
+}
+/*This is the countainer where the drawing is placed, it makes everything centered and uses a box shadow to give the container a 3D appearance. The container has a set size of 500 by 350 pixels and its background color is a light green. The z index makes sure that you can see the art placed inside of the container*/
+.container {
+	height: 500px;
+	width: 350px;
+	background-color: #a3d393;
+	position: absolute;
+	margin: auto;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: -1;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+/*Places the cat at a 150 pixels down from the container and 50 pixels to the right from the left side of the container*/
+.cat {
+	position: relative;
+	top: 150px;
+	left: 50px;
+}
+/*Makes the outline of the face of the cat and puts a brown background color. The border radius makes it look like an oval of sorts and its size is of 90 by 150 pixels */
+.face {
+	background-color: #33292b;
+	height: 90px;
+	width: 150px;
+	border-radius: 30px;
+}
+/*the z index makes it so that the inner part of the inner ears of the cats can be seen. The height and width along with the border bottom, left, and right give a triangle shape to the ears*/
+.ear-l,
+.ear-r {
+	width: 0;
+	height: 0;
+	border-bottom: 50px solid #33292b;
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+	position: relative;
+	z-index: -1;
+}
+/*The left ear is moved counter-clockwise by 30 degrees and is positioned up by 35 pixels from the bottom of the face fo the cat*/
+.ear-l {
+	bottom: 35px;
+	transform: rotate(-30deg);
+}
+/*The right ear is moved clockwise by 30 degrees and is positioned 110 pixels to the right from the left side of the face and up by 85 pixels*/
+.ear-r {
+	bottom: 85px;
+	left: 110px;
+	transform: rotate(30deg);
+}
+/*Similar to the ears, with a orange background color, 25 pixels from the right side. Its position relative to the left ear*/
+.inner1 {
+	width: 0;
+	height: 0;
+	border-bottom: 50px solid #d36149;
+	border-left: 25px solid transparent;
+	right: 25px;
+	position: relative;
+}
+/*The height and width along with the border bottom and right gives it a triangle shape, the background color is orange, and its position is relative to the right ear*/
+.inner2 {
+	width: 0;
+	height: 0;
+	border-bottom: 50px solid #d36149;
+	border-right: 25px solid transparent;
+	position: relative;
+}
+/*The 50% radius makes the eyes take the form of a circle. The position is relative to the face, and they are 30 by 30 pixels*/
+.eye-l,
+.eye-r {
+	background-color: #d2873b;
+	height: 30px;
+	width: 30px;
+	border-radius: 50%;
+	position: relative;
+}
+/*Positions the left eye 30 pixels to the right from the left side of the face, and up 75 pixels from the bottom*/
+.eye-l {
+	bottom: 75px;
+	left: 30px;
+}
+/*Positions the right eye 90 pixels to the right from the left side of the face, and up 105 pixels from the bottom*/
+.eye-r {
+	bottom: 105px;
+	left: 90px;
+}
+/*50% radius makes a circle, background black, its position relative to each eye, size of 24 by 24 pixels, 3 pixels down from the top, and 3 pixels to the right for the left side of each eye*/
+.eyeball {
+	background-color: #262626;
+	height: 24px;
+	width: 24px;
+	border-radius: 50%;
+	position: relative;
+	top: 3px;
+	left: 3px;
+}
+/*Similar to the ears but now the bottom has the pointy side of the triangle. The background color is orange, position relative to the face. It is positioned up by 110 pixels from the bottom, and 68 pixels to the right from the left side of the face*/
+.nose {
+	height: 0;
+	width: 0;
+	border-top: 8px solid #d36149;
+	border-left: 7px solid transparent;
+	border-right: 7px solid transparent;
+	position: relative;
+	bottom: 110px;
+	left: 68px;
+}
+/*These represent the mouth of the cat that is right under the nose. It is positioned relative to the nose. Its background color is orange (kind of), they are 1 pixel wide, and 8 pixels high*/
+.l1,
+.l2 {
+	background-color: #d36149;
+	height: 8px;
+	width: 1px;
+	position: relative;
+}
+/*It is moved clockwise by 45 degrees, positioned 4 pixels to the left form the right, and up by 1.5 pixels*/
+.l1 {
+	transform: rotate(45deg);
+	right: 4px;
+	bottom: 1.5px;
+}
+/*It is moved counter-clockwise by 45 degrees, positioned 4 pixels to the right from the left, and up by 10 pixels*/
+.l2 {
+	transform: rotate(-45deg);
+	left: 3px;
+	bottom: 10px;
+}
+/*container for the body of the cat which contains the paws and tail of the cat. The background color is brown, positioned relative to the cat container. 120 pixels high, and 130 pixels wide. The top right of the body is rounded by 65 pixels, it is positioned 30 pixels to the right from the left side of the cat container, and up by 5 pixels from the bottom*/
+.body {
+	background-color: #33292b;
+	height: 120px;
+	width: 130px;
+	position: relative;
+	left: 30px;
+	bottom: 5px;
+	border-radius: 0 65px 0 0;
+}
+/*Brown background color, position relative to the body of the cat, rounded by 10 pixels at the bottom. Size is 10 pixels high and 22 pixels wide*/
+.paw-l,
+.paw-r {
+	background-color: #33292b;
+	height: 10px;
+	width: 22px;
+	position: relative;
+	border-radius: 0 0px 10px 10px;
+}
+/*Left paw is positioned 120 pixels down from the top of the body container of the cat*/
+.paw-l {
+	top: 120px;
+}
+/*Right paw is positioned 110 pixels down from the top and 50 pixels to the right from the left side of the body container of the cat*/
+.paw-r {
+	top: 110px;
+	left: 50px;
+}
+/*Brown background color, 100 pixels wide, 20 pixels high. Top right and bottom right are rounded by 20 pixels. Position relative to the body container of the cat, down by 80 pixels from the top, and 100 pixels to the right from the left side*/
+.tail {
+	background-color: #33292b;
+	width: 100px;
+	height: 20px;
+	position: relative;
+	top: 80px;
+	left: 100px;
+	border-radius: 0 20px 20px 0;
+}
+/*Background color brown with 5 opacity. Its size is 30 pixels tall and 150 pixels wide with a border radius of 50% wich makes it a circle. The shadow position is relative to the cat container. The z index of -1 makes it so that whatever is inside of the cat container overlaps the shadow container. It is positioned up by 15 pixels and to the right by 20 pixels ralative to the cat*/
+.shadow {
+	background-color: rgba(8, 8, 8, 0.05);
+	height: 30px;
+	width: 150px;
+	border-radius: 50%;
+	position: relative;
+	bottom: 15px;
+	left: 20px;
+	z-index: -1;
+}

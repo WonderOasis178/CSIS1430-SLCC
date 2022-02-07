@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Mad Libs Game</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+   <h1>Let's do some<br>Mad Libs!</h1>
+
+<hr>
+
+<div id="container">
+
+<div id="selectStory">
+	<p>Pick a story:</p>
+
+	<select>
+  		<option value="bear">Advice on Bears</option>
+ 		<option value="book">How to Choose a Book</option>
+  		<option value="wizard">The Boy Who Lived</option>
+	</select>
+
+	<button id="getForm">Get Started!</button>
+</div>
+
+
+<div id="storyForm" class="hidden">
+		<div></div>
+		<button id="chooseAgain">Change Story?</button>
+		<button id="getStory">Get Mad Lib!</button>
+</div>
+
+<div id="finishedStory" class="hidden">
+
+	<p id="bearText" class="hidden">
+		If you go to some <span></span> place like Yellowstone National <span></span>, you must know how to deal with the wild animals such as bears and wolves and <span></span>. The most important of these is the bear. There are three kinds of bears, the grizzly bear, the <span></span> bear, and the <span></span> bear. Bears spend most of their time <span></span> or <span></span>. They look very <span></span>, but if you make them <span></span>, they might bite your <span></span>. Bears will come up to your car and beg for <span></span>. They will stand on their hind legs and clap their <span></span> together and pretend to be <span></span>. But do not get out of your <span></span> or offer the bears <span></span> or <span></span>. This same advice applies to other wild creatures such as <span></span> and <span></span>. Remember all these rules and you will spend your vacation <span></span> and not get eaten by a/an <span></span>.
+	</p>
+
+	<p id="bookText" class="hidden">
+		There are many <span></span> ways to choose a book to read. First, you could ask for recommendations from your friends and <span></span>. Just don't ask Aunt <span></span>&#8212;she only reads <span></span> books with <span></span>-ripping goddesses on the cover. If your friends and family are no help, try checking out the <span></span> review in <em>The <span></span> Times</em>. If the <span></span> featured there are too <span></span> for your taste, try something a little more low-<span></span>, like <em><span></span>: The <span></span> Magazine</em>, or <em><span></span> Magazine</em>. You could also choose a book the <span></span>-fashioned way. Head to your local library or <span></span> and browse the shelves until something catches your <span></span>. Or, you could save yourself a whole lot of <span></span> trouble and watch <span></span> TV instead!
+	</p>
+
+	<p id="wizardText" class="hidden">
+		Mr and Mrs Dursley, of number <span></span>, Private <span></span>, were proud to say that they were perfectly <span></span>, thank you very much. They were the last people you'd expect to be involved
+        in anything <span></span> or <span></span>, because they just didn't <span></span> with such nonsense. Mr Dursley was the director of a firm called Grunnings, which made <span></span>. He was a <span></span>, <span></span> man with hardly any <span></span>, although he did have a very <span></span> moustache. Mrs Dursley was <span></span> and <span></span> and had nearly twice the usual amount of <span></span>, which came in very useful as she spent so much of her time craning over garden fences, spying on the neighbours. The Dursleys had a <span></span> son called Dudley and in their opinion there was no finer boy anywhere. The Dursleys had everything they wanted, but they also had a <span></span>, and their greatest fear was that somebody would discover it. They had a freak of a nephew who <span></span> in the cupboard under the stairs. His name was <span></span> Potter, better known as the boy who <span></span>. They didn't think they could bear it if anyone found out about the Potters.
+	</p>
+
+<button id="reset">Try Again?</button>
+
+</div>
+
+</div>
+   <script src="js/script.js"></script>
+</body>
+</html>
