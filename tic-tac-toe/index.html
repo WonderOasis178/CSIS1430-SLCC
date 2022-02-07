@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <title>Tic Tac Toe Game</title>
+
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css'>
+<link rel="stylesheet" href="css/style.css">
+
+</head>  
+  <body>    
+    <audio><source src="https://www.dropbox.com/s/w4t8y43xi5mwku8/wining.mp3?raw=1"></audio>
+    <audio><source src="https://www.dropbox.com/s/gfv7klhzco8zez9/tie.mp3?raw=1"></audio>
+    <audio><source src="https://www.dropbox.com/s/1927v1q1mv45ny3/field_click.mp3?raw=1"></audio>
+
+    <h1>Tic Tac Toe Game</h1>  
+
+    <div class = "well">
+        <div class = "turn-info"></div>
+        <button id = "reset">Reset</button>
+        <section class="message"><p></p></section>
+        
+        <section class="choose">
+        
+        
+        <div class="choose-game">
+          <button class="choose-2">2 players</button>
+        </div>
+         
+        <div class="players-names">
+          <p>Enter players names</p> 
+          <input type="text" id="player1name" size="20" maxlength="10" placeholder="Type Player 1 name" class="">
+          <input type="text" id="player2name" size="20" maxlength="10" placeholder="Type Player 2 name" class="">
+          <button class="start-game">Start Game</button>
+        </div>  
+      
+        <div class="choose-sign">
+         <p></p>
+          <button class="choose-x">X</button>
+          <button class="choose-o">O</button>
+          </div>
+        </section><!--end of choose-->
+        
+        <section class="fields">  
+          <table>
+            <tr>
+              <td id="1a">1a</td>
+              <td id="2a">2a</td>
+              <td id="3a">3a</td>
+            </tr>
+          
+             <tr>
+              <td id="1b">1b</td>
+              <td id="2b">2b</td>
+              <td id="3b">3b</td>
+            </tr>
+          
+             <tr>
+              <td id="1c">1c</td>
+              <td id="2c">2c</td>
+              <td id="3c">3c</td>
+            </tr>
+          </table>
+        </section><!--end of fields-->
+        
+        <section class="scores">
+          <p>0 : 0</p>
+          <div class="players-score">
+            <span class="player1-score"></span>
+            <span class="player2-score"></span>            
+            </div>
+        </section>
+        
+    </div><!--end of well-->
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script>
+<script  src="js/script.js"></script>
+
+</body>
+</html>

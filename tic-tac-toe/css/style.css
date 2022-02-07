@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Acme&family=Poppins:wght@300;400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap");
+/*---------- VARIABLES -----------*/
+/*---------- MIXINS -----------*/
+body {
+  font-size: 3em;
+  font-family: "Bungee Inline", "Poppins", "Helvetica", "sans-serif";
+  color: #1c0b19;
+  background-image: url("https://raw.githubusercontent.com/anniebombanie/tic-tac-toe/master/img/fantasy-bg.jpg");
+  background-size: cover;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+h1 {
+  text-align: center;
+  padding: 20px 5px;
+  color: #f5f5f5;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.8);
+}
+
+.well {
+  position: relative;
+  width: 380px;
+  height: 442px;
+  padding: 0px;
+  margin: 0px auto;
+  text-align: center;
+  background-color: #e9ebed;
+  border: 40px solid #5F9EA0;
+  border-bottom: 100px solid #5F9EA0;
+  -webkit-box-shadow: inset 0 0 20px #000000;
+          box-shadow: inset 0 0 20px #000000;
+  background-image: #e9ebed;
+}
+
+button {
+  font-size: 0.8em;
+  border-radius: 5px;
+  background: radial-gradient(#e0e1dd, white);
+}
+
+button:active, button:focus, button:visited {
+  outline: none;
+}
+
+button:hover {
+  background: radial-gradient(white, #e0e1dd);
+}
+
+.choose-game p {
+  padding: 40px 0px;
+}
+
+.choose-game button {
+  position: relative;
+  top: 80px;
+  left: auto;
+}
+
+.players-names {
+  display: none;
+}
+
+.players-names input {
+  height: 30px;
+  margin-bottom: 30px;
+  font-family: 'Poppins';
+  font-size: 0.6em;
+}
+
+.players-names input:focus {
+  outline: none;
+  border: 2px solid #9fc5c6;
+}
+
+.players-names p {
+  padding: 20px 0px;
+}
+
+.players-names button {
+  position: absolute;
+  bottom: -60px;
+  left: 80px;
+}
+
+.choose-sign {
+  display: none;
+}
+
+.choose-sign p {
+  padding: 50px 0px 30px 0px;
+}
+
+.choose-sign button {
+  padding: 5px 15px;
+  border-radius: 5px;
+}
+
+.choose-sign button:focus {
+  outline: none;
+}
+
+.fields {
+  display: none;
+}
+
+.scores {
+  font-size: 0.8em;
+  color: #fefae0;
+  padding-top: 10px;
+  display: none;
+}
+
+.player1-score {
+  float: left;
+  font-size: 0.7em;
+}
+
+.player2-score {
+  float: right;
+  font-size: 0.7em;
+}
+
+.message {
+  position: absolute;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(35%, transparent), color-stop(35%, #ffffcc), color-stop(65%, #ffffcc), color-stop(65%, transparent));
+  background-image: linear-gradient(to bottom, transparent, transparent 35%, #ffffcc 35%, #ffffcc 65%, transparent 65%);
+  opacity: 0.8;
+  width: 100%;
+  height: 100%;
+  color: #333;
+  display: none;
+  z-index: 1;
+}
+
+.message p {
+  padding: 45% 0;
+}
+
+.turn-info {
+  position: absolute;
+  font-size: 0.6em;
+  color: #fefae0;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+  top: -35px;
+  display: none;
+}
+
+#reset {
+  position: absolute;
+  font-size: 0.6em;
+  padding: 0px 2px;
+  top: -35px;
+  right: 0px;
+}
+
+table {
+  margin: 0px auto;
+  font-size: 1.8em;
+  width: 100%;
+}
+
+td {
+  width: 100px;
+  height: 100px;
+  background: radial-gradient(#9fc5c6, transparent);
+  cursor: pointer;
+}
+
+.td-clicked {
+  background: radial-gradient(transparent, #9fc5c6);
+}
+
+td:not(:last-child) {
+  border-right: 5px solid #5F9EA0;
+}
+
+tr:not(:last-child) {
+  border-bottom: 5px solid #5F9EA0;
+}
+
+.td-winning-color {
+  background-color: #5F9EA0;
+  opacity: 1;
+}
+/*# sourceMappingURL=style.css.map */
