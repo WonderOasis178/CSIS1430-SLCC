@@ -1,0 +1,230 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  scroll-behavior: smooth;
+  scroll-padding-top: 1rem;
+  margin: 0;
+}
+
+:root {
+  --color-white: #fff;
+  --color-black: #000;
+  --color-lightGray: #f9f9f9;
+  --color-dark: #22322F;
+  --color-darkGray: #333333;
+  --color-primary-green: #71A89E;
+  --color-primary: #97aeb5;
+  --header-height: 7.5rem;
+  /* 120px */
+}
+
+body {
+  position: relative;
+}
+
+.affix {
+  top: 0;
+  width: 100%;
+  z-index: 9999 !important;
+}
+
+.banner-image {
+  background-image: url(../img/banner-img.jpg);
+  background-size: cover;
+}
+
+.content-section {
+  padding-top: 2.8em;
+  overflow-y: scroll;
+}
+
+.content.text-center h1 {
+  text-shadow: 2px 2px 5px var(--color-dark);
+  margin-bottom: 30px;
+}
+
+.hero-cta {
+  color: var(--color-dark);
+  border: 2px solid var(--color-dark);
+  border-radius: 10px;
+  padding: 0.625rem 1.65rem;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+  text-decoration: none;
+}
+
+.hero-cta--primary {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  -webkit-box-shadow: 2px 2px 0 var(--color-dark);
+          box-shadow: 2px 2px 0 var(--color-dark);
+}
+
+.hero-cta--primary:hover,
+.hero-cta--primary:focus {
+  background-color: var(--color-white);
+  color: var(--color-dark);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.nav-masthead .nav-link {
+  padding: .25rem 0;
+  font-weight: 450;
+  color: rgba(255, 255, 255, 0.5);
+  background-color: transparent;
+  border-bottom: .25rem solid transparent;
+}
+
+/*  
+  .nav-masthead .nav-link:hover,
+  .nav-masthead .nav-link:focus {
+    border-bottom-color: rgba(255, 255, 255, .25);
+  }
+*/
+.active {
+  border-bottom-color: rgba(255, 255, 255, 0.25) !important;
+}
+
+.nav-masthead .nav-link + .nav-link {
+  margin-left: 1rem;
+}
+
+.scroll-to-top {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  bottom: 40px;
+  background: var(--color-primary);
+  right: 50px;
+  text-decoration: none;
+  text-align: center;
+  line-height: 50px;
+  color: #fff;
+  font-size: 22px;
+}
+
+.container h2 {
+  margin-top: 30px;
+}
+
+#e-portfolio {
+  background-image: url(../img/city-cover.jpeg);
+  background-size: cover;
+}
+
+section {
+  margin-bottom: -30px;
+}
+
+.col-md-6 h2 {
+  text-align: center;
+  color: var(--color-primary-green);
+}
+
+.col-md-6 a {
+  text-decoration: none;
+}
+
+.col-md-6 p {
+  padding: 1.3em auto 0;
+  text-align: center;
+  margin-top: 1.3em;
+}
+
+.col-md-6 img {
+  -webkit-box-shadow: 8px 8px 8px 3px #888888;
+          box-shadow: 8px 8px 8px 3px #888888;
+}
+
+/*start quote generation styling*/
+.quote-container {
+  height: 100vh;
+  width: 100%;
+  background: #001219;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: "Poppins", sans-serif;
+  padding: 48px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.quote-container .quote {
+  max-width: 700px;
+  position: relative;
+}
+
+.quote-container .quote-icon {
+  position: absolute;
+  left: -76px;
+  top: -48px;
+  -webkit-transform: scale(1.5) rotateZ(5deg);
+          transform: scale(1.5) rotateZ(5deg);
+  opacity: 0.1;
+}
+
+.quote-container .quote-content {
+  font-weight: bold;
+  font-size: 30px;
+  color: #fff;
+}
+
+.quote-container .quote-author {
+  font-size: 18px;
+  color: yellow;
+  border-top: 1px solid #93e0ff;
+  padding: 16px 32px;
+  margin-top: 20px;
+}
+
+.quote-container .new-quote-btn {
+  padding: 16px 36px;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background: #f3f3b2;
+  color: #001219;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease;
+}
+
+.quote-container .new-quote-btn:hover {
+  background: #93e0ff;
+}
+
+@media (max-width: 900px) {
+  .quote-container .quote-icon {
+    left: -16px;
+  }
+}
+
+@media (max-width: 500px) {
+  .quote-container .quote-content {
+    font-size: 24px;
+    line-height: 1.8;
+  }
+}
+
+/*end quote generator styling*/
+.music {
+  display: none;
+  border: 0;
+}
+/*# sourceMappingURL=style.css.map */
